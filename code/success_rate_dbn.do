@@ -61,7 +61,7 @@ foreach yyyy of numlist 2021/2023 {
 graph combine success_rate_2021 success_rate_2022 success_rate_2023, cols(2) rows(2) name("success_rate_by_year")
 graph export "${graphs}/success_rate_by_year.pdf", name("success_rate_by_year") replace
 
-* Create a combined ocnditional success rate variance graph
+* Create a combined conditional success rate variance graph
 graph combine cond_var_2021 cond_var_2022 cond_var_2023, cols(2) rows(2) name("cond_var_by_year")
 graph export "${graphs}/cond_var_by_year.pdf", name("cond_var_by_year") replace
 
